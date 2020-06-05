@@ -67,5 +67,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.twitter).setOnClickListener(view -> {
             startActivity(new Intent(this, TwitterActivity.class));
         });
+        findViewById(R.id.phone).setOnClickListener(view -> {
+            startActivity(new Intent(this, PhoneActivity.class));
+        });
     }
 }

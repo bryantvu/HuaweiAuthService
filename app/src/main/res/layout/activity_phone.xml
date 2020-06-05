@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".PhoneActivity">
+
+    <Button
+        android:id="@+id/btn_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Verification Code"
+        android:onClick="getVerificationCode"
+        tools:ignore="HardcodedText,OnClick" />
+
+    <EditText
+        android:id="@+id/verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter verification code"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_create_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create User"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signin"
+        android:onClick="userSignin"
+        tools:ignore="HardcodedText,OnClick"/>
+
+    <Button
+        android:id="@+id/btn_signout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signout"
+        android:onClick="userSignout"
+        tools:ignore="HardcodedText,OnClick"/>
+
+</LinearLayout>
